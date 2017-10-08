@@ -1,0 +1,109 @@
+// Calculate the volume of a rectangle, output should display only two decimil points.
+// By Brent Willoughby
+
+import java.util.Scanner;
+
+
+public class Chpt4_Project
+{
+   public static void main(String[] args)
+   
+   
+   {
+      // declare variables
+      double length = 0.00, width = 0.00, height = 0.00, volume = 0.00;
+   
+      // Get the rectangle's length from the user.
+      length = getLength();
+   
+      // Get the rectangle's width from the user.
+      width = getWidth();
+      
+      // Get the rectangle's height from user .
+      height = getHeight();
+
+      // Get the rectangle's volume.
+      volume = getVolume(length, width, height);
+
+      // Display the rectangle data.
+      displayData(length, width, height, volume);
+   }
+   
+   
+   //getLength() method
+   //this method asks the user for the length of a rectangle
+   //and returns that length as a double
+   
+   public static double getLength()
+   {
+     System.out.print("Enter the length of the rectangle: ");
+     Scanner scanner = new Scanner(System.in);
+     
+     
+     // store the number entered by the user
+     double ret = scanner.nextInt();
+     
+     // return the number
+     return ret;
+   }
+   
+   
+    // getWidth() method
+    // this method asks the user for the width of a rectangle
+    //and returns that width as a double
+    
+   public static double getWidth()
+   {
+     System.out.print("Enter the width of the rectangle: ");
+     Scanner scanner = new Scanner(System.in);
+     
+    
+      // store the number entered by the user
+      double ret = scanner.nextInt();
+
+      // return the number
+      return ret;
+   }
+   
+   
+   
+    // getHeigth() method
+    // this method asks the user for the height of a rectangle
+    // and returns that height as a double
+    
+   public static double getHeight()
+   {
+     System.out.print("Enter the height of the rectangle: ");
+     Scanner scanner = new Scanner(System.in);
+     
+    
+      // store the number entered by the user
+      double ret = scanner.nextInt();
+
+      // return the number
+      return ret;
+   }
+   
+   
+    // getVolume() method
+    // this method accepts three arguments of type double and multiplies them
+    // it returns the result as a double
+    
+   public static double getVolume(double l, double w, double h)
+   {
+     double result = l * w *h;
+     return result;
+   }
+   
+   
+    // displayData() method
+    // this method accepts 4 doubles as arguments and prints them with println()
+    
+   public static void displayData(double l, double w, double h, double v)
+   {
+     System.out.println("The length is:" + l );
+     System.out.println("The width is:" + w );
+     System.out.println("The height is:" + h );
+     System.out.printf("The volume is: %.2f", v ); 
+   }
+}
