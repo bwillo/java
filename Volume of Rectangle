@@ -1,4 +1,4 @@
-// Calculate the volume of a rectangle, output should display only two decimil points.
+// Calculate the volume of a rectangle, output should display only two decimal points.
 // By Brent Willoughby
 
 import java.util.Scanner;
@@ -11,7 +11,7 @@ public class Chpt4_Project
    
    {
       // declare variables
-      double length = 0.00, width = 0.00, height = 0.00, volume = 0.00;
+      double length = 0.0, width = 0.0, height = 0.0, volume = 0.0;
    
       // Get the rectangle's length from the user.
       length = getLength();
@@ -36,7 +36,7 @@ public class Chpt4_Project
    
    public static double getLength()
    {
-     System.out.print("Enter the length of the rectangle: ");
+     System.out.print("Enter the length of the rectangle in inches: ");
      Scanner scanner = new Scanner(System.in);
      
      
@@ -54,7 +54,7 @@ public class Chpt4_Project
     
    public static double getWidth()
    {
-     System.out.print("Enter the width of the rectangle: ");
+     System.out.print("Enter the width of the rectangle in inches: ");
      Scanner scanner = new Scanner(System.in);
      
     
@@ -73,7 +73,7 @@ public class Chpt4_Project
     
    public static double getHeight()
    {
-     System.out.print("Enter the height of the rectangle: ");
+     System.out.print("Enter the height of the rectangle in inches: ");
      Scanner scanner = new Scanner(System.in);
      
     
@@ -97,13 +97,13 @@ public class Chpt4_Project
    
    
     // displayData() method
-    // this method accepts 4 doubles as arguments and prints them with println()
+    // this method accepts 3 doubles as arguments and prints them with println() and printf()
     
    public static void displayData(double l, double w, double h, double v)
    {
      System.out.println("The length is:" + l );
      System.out.println("The width is:" + w );
      System.out.println("The height is:" + h );
-     System.out.printf("The volume is: %.2f", v ); 
+     System.out.printf("The volume in cubic inches is: %.2f", v ); 
    }
 }
